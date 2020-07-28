@@ -1,0 +1,10 @@
+version: '3'
+services:
+  crawler: # python3
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/app/src
+    working_dir: /app/src
+    #command: python ./src/main.py
